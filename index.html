@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="main-heading">DOM Manipulation Demo</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Content Control</h2>
+            <p id="dynamic-text">This text will change when you click the button below.</p>
+            <button id="change-text-btn" class="btn">Change Text Content</button>
+        </section>
+
+        <section class="card">
+            <h2>Style Modification</h2>
+            <div id="style-demo" class="demo-box">
+                This box's style will change when you click the button.
+            </div>
+            <button id="change-style-btn" class="btn">Toggle Styles</button>
+        </section>
+
+        <section class="card">
+            <h2>Element Control</h2>
+            <div id="element-control-area">
+                <p>Click the buttons to add or remove elements.</p>
+            </div>
+            <div class="btn-group">
+                <button id="add-element-btn" class="btn">Add New Element</button>
+                <button id="remove-element-btn" class="btn">Remove Last Element</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Interactive List</h2>
+            <form id="list-form">
+                <input type="text" id="list-item-input" placeholder="Enter new item" required>
+                <button type="submit" class="btn">Add to List</button>
+            </form>
+            <ul id="interactive-list">
+                <li>First list item</li>
+                <li>Second list item</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>DOM Manipulation Practice &copy; <span id="current-year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
